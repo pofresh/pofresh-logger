@@ -28,11 +28,11 @@ process.env.LOGGER_LINE = true;
 in pofresh, you just configure the log4js file and set **lineDebug** for true  
 ```
 {
-  "appenders": [
-  ],
-
-  "levels": {
-  }, 
+  "appenders": {
+  },
+  
+  categories:{
+  },
 
   "replaceConsole": true,
 
@@ -50,11 +50,11 @@ process.env.RAW_MESSAGE = true;
 in pofresh, you just configure the log4js file and set **rawMessage** for true  
 ```
 {
-  "appenders": [
-  ],
-
-  "levels": {
-  }, 
+  "appenders": {
+  },
+  
+  categories:{
+  },
 
   "replaceConsole": true,
 
@@ -85,7 +85,7 @@ logger.error('test3');
 ## License
 (The MIT License)
 
-Copyright (c) 2012-2019 NetEase, Inc. and other contributors
+Copyright (c) 2012-2019. and other contributors
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

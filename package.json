@@ -1,9 +1,9 @@
 {
     "name": "pofresh-logger",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": false,
     "dependencies": {
-        "log4js": "4.1.0"
+        "log4js": "^4.1.0"
     },
     "devDependencies": {
         "should": ">=0.0.1",

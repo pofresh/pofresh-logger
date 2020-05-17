@@ -1,7 +1,7 @@
 pofresh-logger
 ========
 
-pofresh-logger is a [log4js](https://github.com/nomiddlename/log4js-node) wrapper for [pofresh](https://github.com/NetEase/pofresh) which provides some useful features.  
+pofresh-logger is a [log4js](https://github.com/nomiddlename/log4js-node) wrapper for [pofresh](https://github.com/ljhsai/pofresh) which provides some useful features.  
 
 ## Installation
 ```
@@ -14,7 +14,7 @@ besides category, you can output prefix as you like in your log
 prefix can be filename, serverId, serverType, host etc  
 to use this feature, you just pass prefix params to getLogger function  
 ```
-var logger = require('pofresh-logger').getLogger(category, prefix1, prefix2, ...);
+const logger = require('pofresh-logger').getLogger(category, prefix1, prefix2, ...);
 ```
  log output msg will output with prefix ahead   
 
@@ -74,18 +74,19 @@ the above configuration means reload the configuration file every 30 seconds. Yo
 ## Example
 log.js
 ```
-var logger = require('pofresh-logger').getLogger('log', __filename, process.pid);
+const logger = require('pofresh-logger').getLogger('log', __filename, process.pid);
 
 process.env.LOGGER_LINE = true;
 logger.info('test1');
-logger.warn('test2');
-logger.error('test3');
+logger.debug('test2');
+logger.warn('test3');
+logger.error('test4');
 ```
 
 ## License
 (The MIT License)
 
-Copyright (c) 2012-2019. and other contributors
+Copyright (c) 2020 luson and other contributors
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

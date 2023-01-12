@@ -1,7 +1,29 @@
-const logger = require('pofresh-logger').getLogger('log', __filename, process.pid);
+const logger = require('../index');
+
+const config = {
+    "appenders": {
+        "console": {
+            "type": "console"
+        },
+    },
+    "categories": {
+        "default": {
+            "appenders": ["console"],
+            "level": "all"
+        }
+    },
+    "replaceConsole": true,
+    "rawMessage": false,
+    "lineDebug": false
+};
+
+logger.configure(config);
+
+
+const log = logger.getLogger('log', __filename, process.pid);
 process.env.LOGGER_LINE = true;
 // process.env.RAW_MESSAGE = true; //only message
-logger.info('test1');
-logger.debug('test2');
-logger.warn('test3');
-logger.error('test4');
+log.info('test1');
+log.debug('test2');
+log.warn('test3');
+log.error('test4');

@@ -1,7 +1,7 @@
 pofresh-logger
 ========
 
-pofresh-logger is a [log4js](https://github.com/nomiddlename/log4js-node) wrapper for [pofresh](https://github.com/ljhsai/pofresh) which provides some useful features.  
+pofresh-logger is a [log4js](https://github.com/nomiddlename/log4js-node) wrapper for [pofresh](https://github.com/pofresh/pofresh) which provides some useful features.  
 
 ## Installation
 ```

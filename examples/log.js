@@ -21,7 +21,7 @@ logger.configure(config);
 
 
 const log = logger.getLogger('log', __filename, process.pid);
-process.env.LOGGER_LINE = true;
+// process.env.LOGGER_LINE = true;
 // process.env.RAW_MESSAGE = true; //only message
 log.info('test1');
 log.debug('test2');
